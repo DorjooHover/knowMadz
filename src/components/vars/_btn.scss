@@ -1,0 +1,19 @@
+@mixin btn($background, $border-color, $color) {
+	background-color: $background;
+	border: 3px solid $border-color;
+	border-radius: 2.5rem;
+	padding: 10px 45px;
+	color: $color;
+	transition: $transition;
+
+	// Fonts properties
+	font-size: 22px;
+	line-height: 2;
+	font-weight: 600;
+	&:hover {
+		border-color: $color-white;
+	}
+	@media (max-width: 1050px) {
+		font-size: 20px;
+	}
+}
