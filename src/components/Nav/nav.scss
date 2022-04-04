@@ -125,3 +125,12 @@
 	// 	transform: translateX(0);
 	// }
 }
+@media (max-width: 470px) {
+	#hidden {
+		width: 100vh !important;
+		&.close {
+			transform: translateX(0%) !important;
+		}
+	}
+}
+
