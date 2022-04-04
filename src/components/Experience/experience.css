@@ -197,6 +197,9 @@
 }
 
 @media (max-width: 900px) {
+  #experience {
+    padding: 20px 0;
+  }
   .horizontal__card {
     max-height: 400px;
   }
@@ -348,6 +351,67 @@
     -o-object-fit: contain;
        object-fit: contain;
     margin-top: 2rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .horizontal__card {
+    max-height: 540px !important;
+    height: 540px !important;
+  }
+  .horizontal__card .card__left .card__img {
+    max-width: 80% !important;
+    margin-left: 0 !important;
+  }
+  .horizontal__card .card__right {
+    padding: 0 50px 0px 50px !important;
+  }
+  .horizontal__card.blossom__card {
+    max-height: 640px !important;
+    height: 640px !important;
+  }
+  .horizontal__card.green__card .card__left .card__img {
+    max-width: 50% !important;
+  }
+  .vertical__card-div .vertical__card .card__bottom img {
+    max-width: 68% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .horizontal__card.blossom__card {
+    max-height: 700px !important;
+    height: 700px !important;
+  }
+  .horizontal__card.blossom__card, .horizontal__card.green__card {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .horizontal__card.blossom__card .card__left, .horizontal__card.green__card .card__left {
+    -webkit-box-flex: 25% !important;
+        -ms-flex: 25% !important;
+            flex: 25% !important;
+  }
+  .horizontal__card.blossom__card .card__left .card__img, .horizontal__card.green__card .card__left .card__img {
+    max-width: 60% !important;
+  }
+  .horizontal__card.blossom__card .card__right, .horizontal__card.green__card .card__right {
+    max-height: 720px;
+  }
+  #experience .container .cards .vertical__card-div .vertical__card {
+    max-height: 450px;
+  }
+  #experience .container .cards .vertical__card-div .vertical__card.purple__card {
+    max-height: 500px;
+  }
+  #experience .container .cards .vertical__card-div .vertical__card.purple__card .card__bottom {
+    margin-top: 0;
+  }
+  #experience .container .cards .vertical__card-div .vertical__card .card__bottom img {
+    max-width: 90% !important;
+    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=experience.css.map */

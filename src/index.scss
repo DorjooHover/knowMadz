@@ -166,6 +166,11 @@ div {
 		font-size: 18px !important;
 	}
 }
+@media (max-width: 750px) {
+	.main__p {
+		font-size: 16px !important;
+	}
+}
 @media (max-width: 540px) {
 	.big__header {
 		font-size: 52px;
@@ -175,7 +180,14 @@ div {
 		font-size: 35px;
 		line-height: 50px;
 	}
-	.main__p {
-		font-size: 18px !important;
+}
+@media (max-width: 400px) {
+	.big__header {
+		font-size: 48px;
+		line-height: 75px;
+	}
+	.medium__header {
+		font-size: 32px;
+		line-height: 50px;
 	}
 }

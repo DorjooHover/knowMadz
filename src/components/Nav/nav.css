@@ -83,17 +83,68 @@
 }
 
 #nav #hidden {
-  max-width: 60vw;
+  width: 60vw;
   height: 100vh;
   background-color: black;
-  border: 1px solid gray;
-  position: fixed;
-  right: 0px;
+  border: 1px solid #272727;
+  z-index: 9999;
+  display: none;
+}
+
+#nav #hidden.menu {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+#nav #hidden.close {
+  -webkit-transform: translateX(75%);
+          transform: translateX(75%);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 #nav #hidden .hidden__lists li {
   padding: 0 30px;
   line-height: 80px;
+}
+
+#nav #hidden .hidden__lists li a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@-webkit-keyframes left {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes left {
+  from {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: red;
 }
 
 .bg {
@@ -113,6 +164,9 @@
   }
   #nav .container .nav__lists .menu {
     visibility: visible;
+  }
+  #nav #hidden {
+    display: block;
   }
 }
 /*# sourceMappingURL=nav.css.map */

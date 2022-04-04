@@ -5,7 +5,6 @@
 
 #experience {
 	padding: 100px 0;
-
 	.container {
 		.section__title {
 			text-align: center;
@@ -149,6 +148,9 @@
 	// }
 }
 @media (max-width: 900px) {
+	#experience {
+		padding: 20px 0;
+	}
 	.horizontal__card {
 		max-height: 400px;
 		.card__right {
@@ -255,9 +257,71 @@
 					max-width: 40% !important;
 					max-height: 100%;
 					object-fit: contain;
-
 					margin-top: 2rem !important;
 				}
+			}
+		}
+	}
+}
+@media (max-width: 450px) {
+	.horizontal__card {
+		max-height: 540px !important;
+		height: 540px !important;
+		.card__left {
+			.card__img {
+				max-width: 80% !important;
+				margin-left: 0 !important;
+			}
+		}
+		.card__right {
+			padding: 0 50px 0px 50px !important;
+		}
+		&.blossom__card {
+			max-height: 640px !important;
+			height: 640px !important;
+		}
+		&.green__card .card__left .card__img {
+			max-width: 50% !important;
+		}
+	}
+	.vertical__card-div .vertical__card .card__bottom img {
+		max-width: 68% !important;
+	}
+}
+@media (max-width: 400px) {
+	.horizontal__card {
+		&.blossom__card {
+			max-height: 700px !important;
+			height: 700px !important;
+		}
+		&.blossom__card,
+		&.green__card {
+			flex-direction: column !important;
+			.card__left {
+				flex: 25% !important;
+				.card__img {
+					max-width: 60% !important;
+				}
+			}
+			.card__right {
+				max-height: 720px;
+			}
+		}
+	}
+
+	#experience .container .cards .vertical__card-div .vertical__card {
+		max-height: 450px;
+		// height: 640px;
+		&.purple__card {
+			max-height: 500px;
+			.card__bottom {
+				margin-top: 0;
+			}
+		}
+		.card__bottom {
+			img {
+				max-width: 90% !important;
+				margin-top: 30px;
 			}
 		}
 	}

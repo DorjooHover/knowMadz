@@ -29,9 +29,9 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .content {
-    max-width: 90%;
+    max-width: 95% !important;
   }
 }
 
@@ -63,6 +63,12 @@
 @media (max-width: 1050px) {
   #team .container .btn {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  #team .container .btn {
+    font-size: 16px;
   }
 }
 
@@ -141,6 +147,14 @@
     width: 270px;
     height: 170px;
     margin: 10px 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .marquee-wrapper img {
+    width: 200px;
+    height: 140px;
+    margin: 5px 10px;
   }
 }
 /*# sourceMappingURL=team.css.map */

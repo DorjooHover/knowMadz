@@ -50,23 +50,52 @@
 		}
 	}
 	#hidden {
-		max-width: 60vw;
+		width: 60vw;
+		// min-width: 60vw;
 		height: 100vh;
 		background-color: black;
-		border: 1px solid gray;
-		position: fixed;
-		right: 0px;
-
+		border: 1px solid rgb(39, 39, 39);
+		z-index: 9999;
+		display: none;
+		&.menu {
+			transform: translateX(200%);
+			transition: 1s ease;
+		}
+		&.close {
+			transform: translateX(75%);
+			transition: 1s ease;
+		}
 		.hidden__lists {
 			li {
 				padding: 0 30px;
-
 				line-height: 80px;
+				a {
+					color: $color-white;
+					font-weight: bold;
+					font-size: 20px;
+				}
+			}
+		}
+
+		@keyframes left {
+			from {
+				transform: translateX(100px);
+			}
+			to {
+				transform: translateX(0);
 			}
 		}
 	}
 }
 
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: red;
+}
 .bg {
 	background-color: rgba(0, 0, 0, 0.8);
 	z-index: 999;
@@ -88,6 +117,9 @@
 		.menu {
 			visibility: visible;
 		}
+	}
+	#nav #hidden {
+		display: block;
 	}
 	// #hidden {
 	// 	transform: translateX(0);

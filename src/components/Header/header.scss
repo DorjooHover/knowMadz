@@ -21,8 +21,8 @@
 
 		.header__logo {
 			img {
-				width: 150px;
-				// width: 50%;
+				// width: 150px;
+				width: 40%;
 			}
 		}
 		.big__header {
@@ -55,8 +55,8 @@
 		left: 0;
 		width: 100vw;
 		height: 100%;
-		overflow-x: hidden;
-		overflow-y: visible;
+		// overflow-x: hidden;
+		// overflow-y: visible;
 		// BUBBLE IMG
 		img {
 			object-fit: cover;
@@ -351,5 +351,288 @@
 	box-shadow: 1px 1px 100px 6px red;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1000px) {
+	.bubble.sz-160 {
+		&.sh-pink,
+		&.sh-green {
+			display: none;
+		}
+	}
+	.sz-130 {
+		&.sh-yellow {
+			left: 0px;
+			top: auto;
+			right: 0px;
+			bottom: 10%;
+		}
+	}
+	.sz-50 {
+		// ALL SAME TIME POPPED
+		animation-delay: 3s !important;
+		&.sh-none {
+			left: 30%;
+			top: auto;
+			right: auto;
+			bottom: 27%;
+		}
+
+		&.sh-none-1 {
+			left: auto;
+			top: auto;
+			right: 30%;
+			bottom: 29%;
+		}
+		&.sh-none-2 {
+			left: 35%;
+			top: auto;
+			right: auto;
+			bottom: 14%;
+		}
+	}
+	.sz-70 {
+		&.sh-pink {
+			right: 30%;
+			bottom: 14%;
+		}
+	}
+}
+@media (max-width: 750px) {
+	.bubble {
+		transform: scale(0.7) !important;
+		&.sz-195 {
+			display: none;
+		}
+	}
+	#header {
+		height: 100vh;
+	}
+	.sz-50 {
+		// ALL SAME TIME POPPED
+		animation-delay: 3s !important;
+		&.sh-none {
+			left: 35%;
+			top: 68%;
+			right: auto;
+			bottom: auto;
+		}
+
+		&.sh-none-1 {
+			left: 47%;
+			top: 75%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-none-2 {
+			left: 35%;
+			top: auto;
+			right: auto;
+			bottom: 14%;
+		}
+	}
+	.sz-70 {
+		&.sh-green {
+			left: 17%;
+			top: 52%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-yellow {
+			left: auto;
+			top: 50%;
+			right: 23%;
+			bottom: auto;
+		}
+		&.sh-blue {
+			left: auto;
+			top: 60%;
+			right: 15%;
+			bottom: auto;
+		}
+		&.sh-none {
+			left: 18%;
+			top: 80%;
+			right: auto;
+			bottom: auto;
+		}
+	}
+	.sz-100 {
+		&.sh-cyan {
+			left: 16%;
+			top: 68%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-green {
+			left: auto;
+			top: 75%;
+			right: -7%;
+			bottom: auto;
+		}
+		&.sh-none {
+			display: none;
+		}
+	}
+	.sz-110 {
+		&.sh-red {
+			left: 0%;
+			top: 55%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-green {
+			left: auto;
+			top: 61%;
+			right: 32%;
+			bottom: auto;
+		}
+	}
+	.sz-130 {
+		&.sh-green {
+			left: 0%;
+			top: 25%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-orange {
+			left: auto;
+			top: 28%;
+			right: 0%;
+			bottom: auto;
+		}
+		&.sh-purple {
+			left: -5%;
+			top: 71%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-yellow {
+			display: none;
+		}
+		&.sh-cyan {
+			left: auto;
+			top: 71%;
+			right: 12%;
+			bottom: auto;
+		}
+	}
+}
+@media (max-width: 470px) {
+	.bubble {
+		transform: scale(0.7) !important;
+		&.sz-195 {
+			display: none;
+		}
+	}
+	#header {
+		height: 120vh;
+	}
+	.images__wrapper {
+		margin-top: 20px;
+	}
+	.sz-50 {
+		// ALL SAME TIME POPPED
+		animation-delay: 3s !important;
+		&.sh-none {
+			left: 35%;
+			top: 68%;
+			right: auto;
+			bottom: auto;
+		}
+
+		&.sh-none-1 {
+			display: none;
+		}
+		&.sh-none-2 {
+			left: 35%;
+			top: auto;
+			right: auto;
+			bottom: 14%;
+		}
+	}
+	.sz-70 {
+		&.sh-green {
+			left: 17%;
+			top: 52%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-yellow {
+			left: auto;
+			top: 50%;
+			right: 23%;
+			bottom: auto;
+		}
+		&.sh-blue {
+			left: auto;
+			top: 60%;
+			right: 15%;
+			bottom: auto;
+		}
+		&.sh-none {
+			display: none;
+		}
+		&.sh-pink {
+			display: none;
+		}
+	}
+	.sz-100 {
+		&.sh-cyan {
+			left: 16%;
+			top: 68%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-green {
+			left: auto;
+			top: 75%;
+			right: -7%;
+			bottom: auto;
+		}
+		&.sh-none {
+			display: none;
+		}
+	}
+	.sz-110 {
+		&.sh-red {
+			left: 0%;
+			top: 55%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-green {
+			left: auto;
+			top: 61%;
+			right: 32%;
+			bottom: auto;
+		}
+	}
+	.sz-130 {
+		&.sh-green {
+			left: 0%;
+			top: 25%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-orange {
+			left: auto;
+			top: 28%;
+			right: 0%;
+			bottom: auto;
+		}
+		&.sh-purple {
+			left: -5%;
+			top: 71%;
+			right: auto;
+			bottom: auto;
+		}
+		&.sh-yellow {
+			display: none;
+		}
+		&.sh-cyan {
+			left: auto;
+			top: 71%;
+			right: 12%;
+			bottom: auto;
+		}
+	}
 }

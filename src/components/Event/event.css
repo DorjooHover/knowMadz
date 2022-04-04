@@ -68,6 +68,12 @@
   }
 }
 
+@media (max-width: 750px) {
+  #event .container .btn {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 1150px) {
   #event .container .event__content {
     max-width: 65%;

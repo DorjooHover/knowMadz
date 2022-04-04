@@ -91,3 +91,12 @@
 		}
 	}
 }
+@media (max-width: 450px) {
+	.marquee-wrapper {
+		img {
+			width: 200px;
+			height: 140px;
+			margin: 5px 10px;
+		}
+	}
+}
