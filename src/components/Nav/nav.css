@@ -107,10 +107,11 @@
 
 #nav #hidden .hidden__lists li {
   padding: 0 30px;
-  line-height: 80px;
+  line-height: 0 !important;
 }
 
 #nav #hidden .hidden__lists li a {
+  line-height: 80px;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
@@ -167,6 +168,13 @@
   }
   #nav #hidden {
     display: block;
+  }
+  #nav #hidden .hidden__lists a {
+    padding-right: 300px;
+    white-space: nowrap;
+  }
+  #nav #hidden .hidden__lists a.btn {
+    padding: 10px 30px;
   }
 }
 

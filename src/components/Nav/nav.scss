@@ -68,8 +68,9 @@
 		.hidden__lists {
 			li {
 				padding: 0 30px;
-				line-height: 80px;
+				line-height: 0 !important;
 				a {
+					line-height: 80px;
 					color: $color-white;
 					font-weight: bold;
 					font-size: 20px;
@@ -120,6 +121,16 @@
 	}
 	#nav #hidden {
 		display: block;
+		.hidden__lists {
+			a {
+				// line-height: 80px;
+				padding-right: 300px;
+				white-space: nowrap;
+			}
+			a.btn {
+				padding: 10px 30px;
+			}
+		}
 	}
 	// #hidden {
 	// 	transform: translateX(0);
