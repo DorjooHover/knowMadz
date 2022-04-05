@@ -18,13 +18,13 @@ const Footer = () => {
 				<div className="footer__lists">
 					<ul>
 						<li>
-							<a href="#">Donate</a>
+							<a href="#experience">Бидний тухай</a>
 						</li>
 						<li>
-							<a href="#">Terms of Use</a>
+							<a href="#event">Эвент</a>
 						</li>
 						<li>
-							<a href="#">Privacy Policy</a>
+							<a href="#team">Гишүүд</a>
 						</li>
 					</ul>
 				</div>

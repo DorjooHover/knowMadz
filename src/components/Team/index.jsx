@@ -126,7 +126,7 @@ const Event = () => {
 						төлөвлөлт, зорилго, төлөвлөгөөг хэрэгжүүлдэг
 						үндсэн гишүүд юм.
 					</p>
-					<a href="#" className="btn">
+					<a href="#team" className="btn">
 						CLUB MEMBERS -Н ТАЛААР
 					</a>
 				</div>
