@@ -42,6 +42,7 @@
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
+  z-index: 1 !important;
 }
 
 #involve::before {
@@ -53,6 +54,7 @@
   height: 100%;
   -webkit-box-shadow: inset 0px 80px 78px -10px #000, inset 0px -80px 40px -10px #000;
           box-shadow: inset 0px 80px 78px -10px #000, inset 0px -80px 40px -10px #000;
+  z-index: -1 !important;
 }
 
 #involve .container {
@@ -61,6 +63,12 @@
 
 #involve .container .big__header {
   color: #0be014;
+}
+
+#involve .container .btn__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #involve .container .btn__div .btn {
@@ -74,6 +82,7 @@
   font-size: 22px;
   line-height: 2;
   font-weight: 600;
+  padding: 0 45px;
 }
 
 #involve .container .btn__div .btn:hover {
@@ -128,6 +137,30 @@
   }
 }
 
+@media (max-width: 550px) {
+  form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px !important;
+  }
+  form .form__group {
+    width: 200px;
+    height: 50px;
+  }
+  form .btn {
+    width: 100% !important;
+  }
+  form .input__field {
+    height: 100%;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 17px;
+    z-index: 999;
+  }
+}
+
 @media (max-width: 450px) {
   #involve .btn__div a {
     display: block;
@@ -136,5 +169,20 @@
     margin-bottom: 20px;
     text-align: center;
   }
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.input__field {
+  height: 100%;
+  padding: 0 30px;
+  border-radius: 30px;
+  font-size: 17px;
+  z-index: 999;
 }
 /*# sourceMappingURL=involve.css.map */

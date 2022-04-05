@@ -11,6 +11,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	// @include flexCenter(column, center);
+	z-index: 1 !important;
 	&::before {
 		content: '';
 		position: absolute;
@@ -20,6 +21,7 @@
 		height: 100%;
 		box-shadow: inset 0px 80px 78px -10px #000,
 			inset 0px -80px 40px -10px #000;
+		z-index: -1 !important;
 	}
 	.container {
 		padding-bottom: 50px;
@@ -27,8 +29,10 @@
 			color: $color-green;
 		}
 		.btn__div {
+			display: flex;
 			.btn {
 				@include btn($color-green, $color-green, black);
+				padding: 0 45px;
 			}
 			.second__btn {
 				@include btn(black, $color-green, $color-green);
@@ -43,6 +47,28 @@
 		// background-size: 60%;
 		.content {
 			max-width: 80%;
+		}
+	}
+}
+@media (max-width: 550px) {
+	form {
+		flex-direction: column;
+		gap: 10px !important;
+		.form__group {
+			width: 200px;
+			height: 50px;
+		}
+		.btn {
+			width: 100% !important;
+		}
+		.input__field {
+			// padding: 20px 70px;
+			height: 100%;
+			// padding: 0 30px;
+			border-radius: 30px;
+			padding: 10px 30px;
+			font-size: 17px;
+			z-index: 999;
 		}
 	}
 }
@@ -62,4 +88,17 @@
 			}
 		}
 	}
+}
+
+form {
+	display: flex;
+	gap: 20px;
+}
+.input__field {
+	// padding: 20px 70px;
+	height: 100%;
+	padding: 0 30px;
+	border-radius: 30px;
+	font-size: 17px;
+	z-index: 999;
 }

@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import './involve.css';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Input from './Input';
 const Event = () => {
 	useEffect(() => {
 		AOS.init({
@@ -36,12 +37,7 @@ const Event = () => {
 						бидний хамтрал эхэлнэ.
 					</p>
 					<div className="btn__div">
-						<a href="#" className="btn">
-							БҮРТГҮҮЛЭХ
-						</a>
-						<a href="#" className="btn second__btn">
-							УРИЛГА АВАХ
-						</a>
+						<Input />
 					</div>
 				</div>
 			</div>

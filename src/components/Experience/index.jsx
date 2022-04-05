@@ -3,10 +3,10 @@ import './experience.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Connection from '../../assets/experienceConnection.png';
-import Phone from '../../assets/experiencePhone.png';
-import Goal from '../../assets/experiencePhoneGoal.png';
-import World from '../../assets/experienceWorld.png';
-import Change from '../../assets/experienceChange.png';
+import Phone from '../../assets/experienceIMG/course.png';
+import Goal from '../../assets/experienceIMG/phone.png';
+import World from '../../assets/experienceIMG/zogsoolyu.png';
+import Change from '../../assets/experienceIMG/coreLeaders.png';
 
 const Experience = () => {
 	useEffect(() => {

@@ -351,6 +351,10 @@
     -o-object-fit: contain;
        object-fit: contain;
     margin-top: 2rem !important;
+    margin-left: 0 !important;
+  }
+  .horizontal__card.blossom__card .card__left .card__img.mg, .horizontal__card.green__card .card__left .card__img.mg {
+    max-width: 70% !important;
   }
 }
 
