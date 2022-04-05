@@ -36,6 +36,7 @@
 				#bc1888 100%
 			);
 			line-height: 1.5;
+			-webkit-background-clip: text;
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -59,6 +60,7 @@
 		// overflow-y: visible;
 		// BUBBLE IMG
 		img {
+			-o-object-fit: cover;
 			object-fit: cover;
 			// PRIMARY BUBBLE CLASS
 			&.bubble {
@@ -67,10 +69,21 @@
 				background-position: 50% 50%;
 				background-size: cover;
 				z-index: -1;
+				-webkit-animation: popUp 0.5s ease forwards;
 				animation: popUp 0.5s ease forwards;
+				-webkit-animation-delay: 6s;
 				animation-delay: 6s;
 				visibility: hidden;
 				transition: $transition;
+			}
+			@-webkit-keyframes popUp {
+				from {
+					transform: scale(0);
+				}
+				to {
+					visibility: visible;
+					transform: scale(1);
+				}
 			}
 			@keyframes popUp {
 				from {
@@ -125,6 +138,7 @@
 /* ================	 SIZE 50px BUBBLES	 =================     */
 .sz-50 {
 	// ALL SAME TIME POPPED
+	-webkit-animation-delay: 3s !important;
 	animation-delay: 3s !important;
 	&.sh-none {
 		left: 38%;
@@ -150,6 +164,7 @@
 /* ================	 SIZE 70px BUBBLES	 =================     */
 .sz-70 {
 	// ALL SAME TIME POPPED EXCEPT sh-none
+	-webkit-animation-delay: 2.7s !important;
 	animation-delay: 2.7s !important;
 	&.sh-yellow {
 		left: -3%;
@@ -162,6 +177,7 @@
 		top: 22%;
 		right: auto;
 		bottom: auto;
+		-webkit-animation-delay: 2.8s !important;
 		animation-delay: 2.8s !important;
 	}
 	&.sh-green {
@@ -193,6 +209,7 @@
 /* ================	 SIZE 80px BUBBLES	 =================     */
 .sz-80 {
 	// ALL SAME TIME POPPED EXCEPT
+	-webkit-animation-delay: 2.5s !important;
 	animation-delay: 2.5s !important;
 	&.sh-none {
 		left: 2%;
@@ -216,6 +233,7 @@
 		top: 8%;
 		right: auto;
 		bottom: auto;
+		-webkit-animation-delay: 2.3s !important;
 		animation-delay: 2.3s !important;
 	}
 	&.sh-none {
@@ -223,6 +241,7 @@
 		top: 6%;
 		right: 6%;
 		bottom: auto;
+		-webkit-animation-delay: 3.1s !important;
 		animation-delay: 3.1s !important;
 	}
 	&.sh-green {
@@ -230,6 +249,7 @@
 		top: -3%;
 		right: -3%;
 		bottom: auto;
+		-webkit-animation-delay: 2.3s !important;
 		animation-delay: 2.3s !important;
 	}
 }
@@ -237,6 +257,7 @@
 /* ================	 SIZE 110px BUBBLES	 =================     */
 .sz-110 {
 	// ALL SAME TIME POPPED EXCEPT
+	-webkit-animation-delay: 2.1s !important;
 	animation-delay: 2.1s !important;
 	&.sh-red {
 		left: 9%;
@@ -256,6 +277,7 @@
 /* ================	 SIZE 130px BUBBLES	 =================     */
 .sz-130 {
 	// ALL SAME TIME POPPED EXCEPT sh-yellow
+	-webkit-animation-delay: 1.9s !important;
 	animation-delay: 1.9s !important;
 	&.sh-green {
 		left: -6%;
@@ -281,6 +303,7 @@
 		right: 0px;
 		bottom: -5%;
 		margin: 0 auto;
+		-webkit-animation-delay: 1.3s !important;
 		animation-delay: 1.3s !important;
 	}
 	&.sh-orange {
@@ -298,6 +321,7 @@
 		right: auto;
 		left: 21%;
 		bottom: 2%;
+		-webkit-animation-delay: 1s !important;
 		animation-delay: 1s !important;
 	}
 	&.sh-green {
@@ -305,12 +329,14 @@
 		top: auto;
 		right: 23%;
 		bottom: 2%;
+		-webkit-animation-delay: 0.9s !important;
 		animation-delay: 0.9s !important;
 	}
 }
 
 /* ================	 SIZE 195px BUBBLES	 =================     */
 .sz-195 {
+	-webkit-animation-delay: 0.7s !important;
 	animation-delay: 0.7s !important;
 	&.sh-yellow {
 		left: -6%;
@@ -368,6 +394,7 @@
 	}
 	.sz-50 {
 		// ALL SAME TIME POPPED
+		-webkit-animation-delay: 3s !important;
 		animation-delay: 3s !important;
 		&.sh-none {
 			left: 30%;
@@ -408,6 +435,7 @@
 	}
 	.sz-50 {
 		// ALL SAME TIME POPPED
+		-webkit-animation-delay: 3s !important;
 		animation-delay: 3s !important;
 		&.sh-none {
 			left: 35%;
@@ -531,6 +559,7 @@
 	}
 	.sz-50 {
 		// ALL SAME TIME POPPED
+		-webkit-animation-delay: 3s !important;
 		animation-delay: 3s !important;
 		&.sh-none {
 			left: 35%;
@@ -639,6 +668,7 @@
 @media (max-width: 470px) {
 	.bubble {
 		transform: scale(0.55) !important;
+		-webkit-transform: scale(0.55) !important;
 		&.sz-195 {
 			display: none;
 		}
@@ -651,6 +681,7 @@
 	}
 	.sz-50 {
 		// ALL SAME TIME POPPED
+		-webkit-animation-delay: 3s !important;
 		animation-delay: 3s !important;
 		&.sh-none {
 			left: 64%;

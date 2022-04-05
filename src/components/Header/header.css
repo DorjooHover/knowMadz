@@ -46,6 +46,7 @@
   margin: 20px 0;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   line-height: 1.5;
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -94,7 +95,7 @@
 
 #header .images__wrapper img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   /* ================	 BUBBLE WIDTHS	 =================     */
 }
 
@@ -105,9 +106,9 @@
   background-size: cover;
   z-index: -1;
   -webkit-animation: popUp 0.5s ease forwards;
-          animation: popUp 0.5s ease forwards;
+  animation: popUp 0.5s ease forwards;
   -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+  animation-delay: 6s;
   visibility: hidden;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
@@ -185,7 +186,7 @@
 /* ================	 SIZE 50px BUBBLES	 =================     */
 .sz-50 {
   -webkit-animation-delay: 3s !important;
-          animation-delay: 3s !important;
+  animation-delay: 3s !important;
 }
 
 .sz-50.sh-none {
@@ -212,7 +213,7 @@
 /* ================	 SIZE 70px BUBBLES	 =================     */
 .sz-70 {
   -webkit-animation-delay: 2.7s !important;
-          animation-delay: 2.7s !important;
+  animation-delay: 2.7s !important;
 }
 
 .sz-70.sh-yellow {
@@ -228,7 +229,7 @@
   right: auto;
   bottom: auto;
   -webkit-animation-delay: 2.8s !important;
-          animation-delay: 2.8s !important;
+  animation-delay: 2.8s !important;
 }
 
 .sz-70.sh-green {
@@ -262,7 +263,7 @@
 /* ================	 SIZE 80px BUBBLES	 =================     */
 .sz-80 {
   -webkit-animation-delay: 2.5s !important;
-          animation-delay: 2.5s !important;
+  animation-delay: 2.5s !important;
 }
 
 .sz-80.sh-none {
@@ -286,7 +287,7 @@
   right: auto;
   bottom: auto;
   -webkit-animation-delay: 2.3s !important;
-          animation-delay: 2.3s !important;
+  animation-delay: 2.3s !important;
 }
 
 .sz-100.sh-none {
@@ -295,7 +296,7 @@
   right: 6%;
   bottom: auto;
   -webkit-animation-delay: 3.1s !important;
-          animation-delay: 3.1s !important;
+  animation-delay: 3.1s !important;
 }
 
 .sz-100.sh-green {
@@ -304,13 +305,13 @@
   right: -3%;
   bottom: auto;
   -webkit-animation-delay: 2.3s !important;
-          animation-delay: 2.3s !important;
+  animation-delay: 2.3s !important;
 }
 
 /* ================	 SIZE 110px BUBBLES	 =================     */
 .sz-110 {
   -webkit-animation-delay: 2.1s !important;
-          animation-delay: 2.1s !important;
+  animation-delay: 2.1s !important;
 }
 
 .sz-110.sh-red {
@@ -330,7 +331,7 @@
 /* ================	 SIZE 130px BUBBLES	 =================     */
 .sz-130 {
   -webkit-animation-delay: 1.9s !important;
-          animation-delay: 1.9s !important;
+  animation-delay: 1.9s !important;
 }
 
 .sz-130.sh-green {
@@ -361,7 +362,7 @@
   bottom: -5%;
   margin: 0 auto;
   -webkit-animation-delay: 1.3s !important;
-          animation-delay: 1.3s !important;
+  animation-delay: 1.3s !important;
 }
 
 .sz-130.sh-orange {
@@ -378,7 +379,7 @@
   left: 21%;
   bottom: 2%;
   -webkit-animation-delay: 1s !important;
-          animation-delay: 1s !important;
+  animation-delay: 1s !important;
 }
 
 .bubble.sz-160.sh-green {
@@ -387,13 +388,13 @@
   right: 23%;
   bottom: 2%;
   -webkit-animation-delay: 0.9s !important;
-          animation-delay: 0.9s !important;
+  animation-delay: 0.9s !important;
 }
 
 /* ================	 SIZE 195px BUBBLES	 =================     */
 .sz-195 {
   -webkit-animation-delay: 0.7s !important;
-          animation-delay: 0.7s !important;
+  animation-delay: 0.7s !important;
 }
 
 .sz-195.sh-yellow {
@@ -461,7 +462,7 @@
   }
   .sz-50 {
     -webkit-animation-delay: 3s !important;
-            animation-delay: 3s !important;
+    animation-delay: 3s !important;
   }
   .sz-50.sh-none {
     left: 30%;
@@ -500,7 +501,7 @@
   }
   .sz-50 {
     -webkit-animation-delay: 3s !important;
-            animation-delay: 3s !important;
+    animation-delay: 3s !important;
   }
   .sz-50.sh-none {
     left: 35%;
@@ -616,7 +617,7 @@
   }
   .sz-50 {
     -webkit-animation-delay: 3s !important;
-            animation-delay: 3s !important;
+    animation-delay: 3s !important;
   }
   .sz-50.sh-none {
     left: 35%;
@@ -715,8 +716,8 @@
 
 @media (max-width: 470px) {
   .bubble {
+    transform: scale(0.55) !important;
     -webkit-transform: scale(0.55) !important;
-            transform: scale(0.55) !important;
   }
   .bubble.sz-195 {
     display: none;
@@ -729,7 +730,7 @@
   }
   .sz-50 {
     -webkit-animation-delay: 3s !important;
-            animation-delay: 3s !important;
+    animation-delay: 3s !important;
   }
   .sz-50.sh-none {
     left: 64%;
