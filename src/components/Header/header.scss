@@ -9,7 +9,6 @@
 	text-align: center;
 	height: 130vh;
 	width: 100vw;
-
 	// padding: 600px 0;
 
 	.header__container {
@@ -74,23 +73,28 @@
 				animation-delay: 6s;
 				visibility: hidden;
 				transition: all 0.3s linear;
+				-webkit-transition: all 0.3s linear;
 			}
 			@-webkit-keyframes popUp {
 				from {
 					transform: scale(0);
+					-webkit-transform: scale(0);
 				}
 				to {
 					visibility: visible;
 					transform: scale(1);
+					-webkit-transform: scale(1);
 				}
 			}
 			@keyframes popUp {
 				from {
 					transform: scale(0);
+					-webkit-transform: scale(0);
 				}
 				to {
 					visibility: visible;
 					transform: scale(1);
+					-webkit-transform: scale(1);
 				}
 			}
 			/* ================	 BUBBLE WIDTHS	 =================     */
