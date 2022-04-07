@@ -28,6 +28,10 @@ body {
   position: relative;
 }
 
+.App {
+	overflow-x: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
