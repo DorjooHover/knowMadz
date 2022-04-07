@@ -426,6 +426,9 @@
 @media (max-width: 750px) {
 	.bubble {
 		transform: scale(0.7) !important;
+		-ms-transform: scale(0.7) !important;
+		-moz-transform: scale(0.7) !important;
+		-webkit-transform: scale(0.7) !important;
 		&.sz-195 {
 			display: none;
 		}
@@ -545,12 +548,6 @@
 	}
 }
 @media (max-width: 470px) {
-	.bubble {
-		transform: scale(0.7) !important;
-		&.sz-195 {
-			display: none;
-		}
-	}
 	#header {
 		height: 120vh;
 	}
@@ -668,6 +665,9 @@
 @media (max-width: 470px) {
 	.bubble {
 		transform: scale(0.55) !important;
+
+		-ms-transform: scale(0.55) !important;
+		-moz-transform: scale(0.55) !important;
 		-webkit-transform: scale(0.55) !important;
 		&.sz-195 {
 			display: none;
