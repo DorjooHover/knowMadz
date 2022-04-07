@@ -1,29 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-// const Input = () => {
-// 	return (
-// 		<form method="post" autocomplete="off" name="google-sheet">
-// 			<div class="form-group">
-// 				<input
-// 					type="submit"
-// 					name="submit"
-// 					className="btn"
-// 					value="БҮРТГҮҮЛЭХ"
-// 				/>
-// 			</div>
-// 			<div class="form-group">
-// 				<input
-// 					type="text"
-// 					name="Email"
-// 					className="input__field"
-// 					placeholder="Имэйл хаяг...."
-// 					required=""
-// 				/>
-// 			</div>
-// 		</form>
-// 	);
-// };
 const Input = () => {
 	const form = useRef();
 
@@ -40,6 +17,7 @@ const Input = () => {
 			.then(
 				result => {
 					console.log(result.text);
+					alert('Амжилттай бүртгэгдлээ!');
 				},
 				error => {
 					console.log(error.text);
