@@ -76,7 +76,7 @@
   width: 340px;
   height: 270px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
   margin-top: 2rem;
 }
@@ -105,7 +105,7 @@
   width: 340px;
   height: 270px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 20px 60px;
   border-radius: 10px;
 }

@@ -1,16 +1,12 @@
 @import '../vars/vars';
 @import '../vars/flexCenter';
 
-footer {
+#footer {
 	position: relative;
 	width: 100%;
-	z-index: 999;
+	@include flexCenter(row, center);
 	.container {
-		position: absolute;
 		padding: 20px;
-		left: 50%;
-		bottom: 0;
-		transform: translate(-50%, 0);
 		width: 100%;
 		margin: auto;
 		@include flexCenter(row, space-between);
@@ -61,7 +57,7 @@ footer {
 
 @media (max-width: 750px) {
 	#footer {
-		height: 250px;
+		// height: 250px;
 		.container {
 			flex-direction: column;
 			.footer__logo {

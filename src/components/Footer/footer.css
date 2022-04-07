@@ -1,16 +1,23 @@
-footer {
+#footer {
   position: relative;
   width: 100%;
-  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer .container {
-  position: absolute;
+#footer .container {
   padding: 20px;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   width: 100%;
   margin: auto;
   display: -webkit-box;
@@ -28,11 +35,11 @@ footer .container {
           align-items: center;
 }
 
-footer .container .footer__logo img {
+#footer .container .footer__logo img {
   height: 50px;
 }
 
-footer .container .footer__lists ul {
+#footer .container .footer__lists ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,7 +56,7 @@ footer .container .footer__lists ul {
   gap: 40px;
 }
 
-footer .container .footer__lists ul a {
+#footer .container .footer__lists ul a {
   color: #c185ff;
   font-size: 17px;
   font-weight: 400;
@@ -57,25 +64,25 @@ footer .container .footer__lists ul a {
   transition: 300ms ease;
 }
 
-footer .container .footer__lists ul a:hover {
+#footer .container .footer__lists ul a:hover {
   color: #fff;
 }
 
-footer .container .footer__icons ul {
+#footer .container .footer__icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 
-footer .container .footer__icons ul .icon {
+#footer .container .footer__icons ul .icon {
   font-size: 35px;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
   color: #fff;
 }
 
-footer .container .footer__icons ul .icon:hover {
+#footer .container .footer__icons ul .icon:hover {
   color: #0be014;
 }
 
@@ -86,9 +93,6 @@ footer .container .footer__icons ul .icon:hover {
 }
 
 @media (max-width: 750px) {
-  #footer {
-    height: 250px;
-  }
   #footer .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
