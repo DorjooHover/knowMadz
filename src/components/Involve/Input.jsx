@@ -43,6 +43,7 @@ const Input = () => {
 				className="input__field"
 				placeholder="Имэйл хаяг..."
 				name="email"
+				required
 			/>
 		</form>
 	);
