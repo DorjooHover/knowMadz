@@ -1,7 +1,108 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './header.css';
 import landingLogo from '../../assets/Logos/landingLogo.png';
+import { motion } from 'framer-motion';
+
+const onTap = {
+	scale: 0.9,
+};
+const onHover = {
+	scale: 1.5,
+	transition: {
+		delay: 0,
+	},
+};
 const Header = () => {
+	const popUp50 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 3 },
+		},
+	};
+
+	const popUp70 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 2.75 },
+		},
+	};
+	const popUp80 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 2.5 },
+		},
+	};
+	const popUp100 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 2.3 },
+		},
+	};
+	const popUp110 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 2.1 },
+		},
+	};
+	const popUp130 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 1.9 },
+		},
+	};
+	const popUp160 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 0.95 },
+		},
+	};
+	const popUp195 = {
+		before: {
+			scale: 0,
+			opacity: 0,
+		},
+		after: {
+			scale: 1,
+			opacity: 1,
+			transition: { delay: 0.7 },
+		},
+	};
+
 	return (
 		<section id="header">
 			<div className="header__container">
@@ -21,20 +122,35 @@ const Header = () => {
 			</div>
 			<div className="images__wrapper">
 				{/* ================         SIZE 50px BUBBLES    ================== */}
-				<img
+				<motion.img
 					src="./madz/1.png"
-					className="bubble sz-50 sh-none"
+					className="bubble bubble__hover sz-50 sh-none"
 					alt=""
+					variants={popUp50}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
-				<img
+				<motion.img
 					src="./madz/2.png"
-					className="bubble sz-50 sh-none-1"
+					className="bubble bubble__hover sz-50 sh-none-1"
 					alt=""
+					variants={popUp50}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
-				<img
+				<motion.img
 					src="./madz/3.png"
-					className="bubble sz-50 sh-none-2"
+					className="bubble bubble__hover sz-50 sh-none-2"
 					alt=""
+					variants={popUp50}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ================            END OF 50px*      ===================*/}
 
@@ -44,40 +160,70 @@ const Header = () => {
 
 				{/* ================        SIZE 70px BUBBLES     ================== */}
 				{/* Top left */}
-				<img
+				<motion.img
 					src="./madz/4.png"
-					className="bubble sz-70 sh-yellow"
+					className="bubble bubble__hover sz-70 sh-yellow"
 					alt=""
+					variants={popUp70}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Left */}
-				<img
+				<motion.img
 					src="./madz/5.png"
-					className="bubble sz-70 sh-none"
+					className="bubble bubble__hover sz-70 sh-none"
 					alt=""
+					variants={popUp70}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Middle bottom Left */}
-				<img
+				<motion.img
 					src="./madz/6.png"
-					className="bubble sz-70 sh-green"
+					className="bubble bubble__hover sz-70 sh-green"
 					alt=""
+					variants={popUp70}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Middle bottom Left */}
-				<img
+				<motion.img
 					src="./madz/7.png"
-					className="bubble sz-70 sh-pink"
+					className="bubble bubble__hover sz-70 sh-pink"
 					alt=""
+					variants={popUp70}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Middle bottom right */}
-				<img
+				<motion.img
 					src="./madz/8.png"
-					className="bubble sz-70 sh-purple"
+					className="bubble bubble__hover sz-70 sh-purple"
 					alt=""
+					variants={popUp70}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Right */}
-				<img
+				<motion.img
 					src="./madz/9.png"
-					className="bubble sz-70 sh-blue"
+					className="bubble bubble__hover sz-70 sh-blue"
 					alt=""
+					variants={popUp70}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ================      END OF Size 70px Bubless  ================== */}
 
@@ -87,16 +233,26 @@ const Header = () => {
 
 				{/* ================       SIZE 80px BUBBLES         ================= */}
 				{/* Middle bottom Left */}
-				<img
+				<motion.img
 					src="./madz/10.png"
-					className="bubble sz-80 sh-none"
+					className="bubble bubble__hover sz-80 sh-none"
 					alt=""
+					variants={popUp80}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Middle bottom right */}
-				<img
+				<motion.img
 					src="./madz/11.png"
-					className="bubble sz-80 sh-orange"
+					className="bubble bubble__hover sz-80 sh-orange"
 					alt=""
+					variants={popUp80}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ==================        END OF 80px                ===============*/}
 
@@ -106,22 +262,37 @@ const Header = () => {
 
 				{/* ================       SIZE 100px BUBBLES   ==================      */}
 				{/* Top left */}
-				<img
+				<motion.img
 					src="./madz/12.png"
-					className="bubble sz-100 sh-cyan"
+					className="bubble bubble__hover sz-100 sh-cyan"
 					alt=""
+					variants={popUp100}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Top Right */}
-				<img
+				<motion.img
 					src="./madz/13.png"
-					className="bubble sz-100 sh-none"
+					className="bubble bubble__hover sz-100 sh-none"
 					alt=""
+					variants={popUp100}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Top Right */}
-				<img
+				<motion.img
 					src="./madz/14.png"
-					className="bubble sz-100 sh-green"
+					className="bubble bubble__hover sz-100 sh-green"
 					alt=""
+					variants={popUp100}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ================      END OF Size 100px Bubless    ================ */}
 
@@ -131,16 +302,26 @@ const Header = () => {
 
 				{/* ================     SIZE 110px BUBBLES     ==================      */}
 				{/* Left */}
-				<img
+				<motion.img
 					src="./madz/15.png"
-					className="bubble sz-110 sh-red"
+					className="bubble bubble__hover sz-110 sh-red"
 					alt=""
+					variants={popUp110}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Right */}
-				<img
+				<motion.img
 					src="./madz/16.png"
-					className="bubble sz-110 sh-green"
+					className="bubble bubble__hover sz-110 sh-green"
 					alt=""
+					variants={popUp110}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ================ 	END OF Size 110px Bubless	 ================ */}
 
@@ -150,34 +331,59 @@ const Header = () => {
 
 				{/* ================	 SIZE 130px BUBBLESs	 =================     */}
 				{/* Top Left */}
-				<img
+				<motion.img
 					src="./madz/17.png"
-					className="bubble sz-130 sh-green"
+					className="bubble bubble__hover sz-130 sh-green"
 					alt=""
+					variants={popUp130}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Middle bottom Left */}
-				<img
+				<motion.img
 					src="./madz/18.png"
-					className="bubble sz-130 sh-purple"
+					className="bubble bubble__hover sz-130 sh-purple"
 					alt=""
+					variants={popUp130}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Middle bottom Right */}
-				<img
+				<motion.img
 					src="./madz/19.png"
-					className="bubble sz-130 sh-cyan"
+					className="bubble bubble__hover sz-130 sh-cyan"
 					alt=""
+					variants={popUp130}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Bottom */}
-				<img
+				<motion.img
 					src="./madz/20.png"
-					className="bubble sz-130 sh-yellow"
+					className="bubble bubble__hover sz-130 sh-yellow"
 					alt=""
+					variants={popUp130}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Right */}
-				<img
+				<motion.img
 					src="./madz/21.png"
-					className="bubble sz-130 sh-orange"
+					className="bubble bubble__hover sz-130 sh-orange"
 					alt=""
+					variants={popUp130}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ================ 	END OF Size 130px Bubless	 ================ */}
 
@@ -187,16 +393,26 @@ const Header = () => {
 
 				{/* ================ 	SIZE 160px BUBBLESs 	==================     */}
 				{/* Middle bottom Left Medium */}
-				<img
+				<motion.img
 					src="./madz/22.png"
-					className="bubble sz-160 sh-pink"
+					className="bubble bubble__hover sz-160 sh-pink"
 					alt=""
+					variants={popUp160}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Middle bottom Right Medium */}
-				<img
+				<motion.img
 					src="./madz/23.png"
-					className="bubble sz-160 sh-green"
+					className="bubble bubble__hover sz-160 sh-green"
 					alt=""
+					variants={popUp160}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ================ 	END OF Size 160px Bubless 	================ */}
 
@@ -206,16 +422,26 @@ const Header = () => {
 
 				{/* ================ 	SIZE 195px BUBBLESs 	==================    */}
 				{/* Left Large */}
-				<img
+				<motion.img
 					src="./madz/24.png"
-					className="bubble sz-195 sh-yellow"
+					className="bubble bubble__hover sz-195 sh-yellow"
 					alt=""
+					variants={popUp195}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* Right Large */}
-				<img
+				<motion.img
 					src="./madz/25.png"
-					className="bubble sz-195 sh-purple"
+					className="bubble bubble__hover sz-195 sh-purple"
 					alt=""
+					variants={popUp195}
+					initial="before"
+					animate="after"
+					whileTap={onTap}
+					whileHover={onHover}
 				/>
 				{/* ================ 	END OF Size 195px Bubless 	=================*/}
 			</div>
